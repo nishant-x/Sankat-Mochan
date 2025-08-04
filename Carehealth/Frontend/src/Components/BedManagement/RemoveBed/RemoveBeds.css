@@ -1,0 +1,94 @@
+/* Remove Bed Main Container */
+.remove-bed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1d2228;
+    color: #e1e2e2;
+    padding: 2rem;
+  }
+  
+  /* Title */
+  .remove-bed-title {
+    font-size: 2rem;
+    color: #fb8122;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Note */
+  .remove-bed-note {
+    font-size: 1rem;
+    color: #e1e2e2;
+    background-color: rgba(251, 129, 34, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Bed List */
+  .remove-bed-list {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Individual Bed Item */
+  .remove-bed-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1e2e2;
+    color: #1d2228;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition:  0.3s;
+  }
+  
+  .remove-bed-item:hover {
+    background-color: #fb8122;
+    color: #1d2228;
+  }
+  
+  /* Bed Info */
+  .remove-bed-info {
+    font-size: 1rem;
+  }
+  
+  /* Remove Button */
+  .remove-bed-button {
+    background-color: #fb8122;
+    border: none;
+    color: #1d2228;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .remove-bed-button:hover {
+    background-color: #e06d1d;
+  }
+  
+  /* No Beds Available Message */
+  .remove-bed-no-beds {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fb8122;
+  }
+  
+  /* Success/Error Message */
+  .remove-bed-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fb8122;
+    text-align: center;
+  }

@@ -1,0 +1,16 @@
+#Patient Details: 
+Name:shanti dadi
+ Age:99
+ Gender:Female 
+ ContactNumber:7067698821 
+Blood Group:O-
+ Address:swarg  
+Email: shantidadi@gmail.com
+Login Time: 2025-02-18T05:16:15.139Z
+
+#Patien Prescriptions:
+  1. Prescription Details: 
+  2. Prescription Details: paraciitamol (1x/day, 1 units)
+
+#Patient Report Details:
+  No report details found.

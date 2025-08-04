@@ -1,0 +1,101 @@
+
+/* ExpiryUpdate Component Styles */
+.ExpiryUpdate-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ExpiryUpdate-title {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.ExpiryUpdate-current-date {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ExpiryUpdate-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ExpiryUpdate-update-btn {
+    padding: 10px 15px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ExpiryUpdate-update-btn:hover {
+    background: #218838;
+}
+
+.ExpiryUpdate-back-btn {
+    padding: 10px 15px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.ExpiryUpdate-back-btn:hover {
+    background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ExpiredProduct-list th,
+    .ExpiredProduct-list td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .ExpiredProduct-heading {
+        font-size: 24px;
+    }
+
+    .ExpiredProduct-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ExpiredProduct-back-btn,
+    .ExpiredProduct-home-btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ExpiredProduct-container {
+        padding: 15px;
+    }
+    
+    .ExpiredProduct-heading {
+        font-size: 20px;
+    }
+    
+    .ExpiredProduct-list th,
+    .ExpiredProduct-list td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

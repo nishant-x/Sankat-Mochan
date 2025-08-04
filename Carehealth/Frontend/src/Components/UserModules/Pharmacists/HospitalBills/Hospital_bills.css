@@ -1,0 +1,65 @@
+/* Hospital Bills Component Styles */
+.Hospital-bill-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.Hospital-bill-title {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.Hospital-bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #f8f9fa;
+}
+
+.Hospital-bill-header-row {
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+}
+
+.Hospital-bill-header,
+.Hospital-bill-cell {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.Hospital-bill-row:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.Hospital-bill-no-data {
+    font-size: 18px;
+    color: #dc3545;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ExpiredProduct-list th,
+    .ExpiredProduct-list td,
+    .Hospital-bill-header,
+    .Hospital-bill-cell {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ExpiredProduct-container,
+    .Hospital-bill-container {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,74 @@
+/* Light Theme Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  z-index: 9999;
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  border-radius: 20px;
+}
+
+
+.navbar-brand h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #FFA500;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #FFA500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    text-align: left;
+  }
+}

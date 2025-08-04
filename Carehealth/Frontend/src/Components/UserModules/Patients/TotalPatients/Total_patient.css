@@ -1,0 +1,71 @@
+/* Total Patients Container */
+.Total-patient-container {
+    width: 100%;
+    padding: 2rem;
+    background-color: #1d2228;
+    color: #e1e2e2;
+    text-align: center;
+}
+
+/* Title */
+.Total-patient-title {
+    font-size: 2rem;
+    color: #fb8122;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* Table Styles */
+.Total-patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e1e2e2;
+    color: #1d2228;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Row */
+.Total-patient-header-row {
+    background-color: #fb8122;
+    color: #1d2228;
+}
+
+/* Header Cells */
+.Total-patient-header {
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 1px solid #1d2228;
+}
+
+/* Table Row */
+.Total-patient-row {
+    background-color: #e1e2e2;
+    transition:  0.3s ease-in-out;
+}
+
+/* Hover Effect */
+/* .Total-patient-row:hover {
+    background-color: #fb8122;
+    color: #1d2228;
+    font-weight: bold;
+} */
+
+/* Table Cells */
+.Total-patient-cell {
+    padding: 12px;
+    border: 1px solid #1d2228;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .Total-patient-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+} */

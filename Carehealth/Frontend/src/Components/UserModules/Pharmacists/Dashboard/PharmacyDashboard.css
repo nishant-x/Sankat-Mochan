@@ -1,0 +1,88 @@
+/* Container Styling */
+.Pharmacydash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pharmacy-dash-container {
+    backdrop-filter: blur(5px);
+    /* background: #222; */
+   /* box-shadow: 0px 1px 2px rgba(0,255,255,0.5), 
+               0px 2px 4px rgba(0,255,255,0.5), 
+               0px 4px 8px rgba(0,255,255,0.5), 
+               0px 8px 16px rgba(0,255,255,0.5);  */
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 1300px;
+    /* background-color: #1d2228; */
+    padding: 20px;
+    gap: 50px;
+    margin-top: 70px;
+    /* background: rgba(180, 179, 179, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(20, 91, 133, 0.2); */
+    text-align: center;
+     border-radius: 10px;
+}
+
+/* Heading Styling */
+.pharmacy-dash-heading {
+    font-size: 2rem;
+    color: #fb8122; /* Light Gray */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Options Container */
+.pharmacy-dash-options-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+/* Links */
+.pharmacy-dash-option-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1d2228; /* Dark Gray */
+    background-color: #e1e2e2; /* Light Gray */
+    padding: 50px 50px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pharmacy-dash-option-link:hover {
+    background-color: #fb8122; /* Orange */
+    color: #fff; /* White Text */
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pharmacy-dash-container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .pharmacy-dash-options-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pharmacy-dash-option-link {
+        width: 100%;
+        text-align: center;
+    }
+}

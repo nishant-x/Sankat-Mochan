@@ -1,0 +1,144 @@
+/* AboutToExpire.css */
+
+/* Container for the entire component */
+.AboutToExpire-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .AboutToExpire-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading State */
+  .AboutToExpire-loading {
+    font-size: 1.2rem;
+    color: #3498db;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Error Message */
+  .AboutToExpire-error-message {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* No Products Message */
+  .AboutToExpire-no-products {
+    font-size: 1.2rem;
+    color: #34495e;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Table Styling */
+  .AboutToExpire-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .AboutToExpire-list th,
+  .AboutToExpire-list td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .AboutToExpire-list th {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .AboutToExpire-list td {
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .AboutToExpire-row:hover {
+    background-color: #ecf0f1;
+  }
+  
+  /* Buttons Container */
+  .AboutToExpire-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Button Styling */
+  .AboutToExpire-back-btn,
+  .AboutToExpire-home-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .AboutToExpire-back-btn:hover,
+  .AboutToExpire-home-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .AboutToExpire-container {
+      padding: 15px;
+    }
+  
+    .AboutToExpire-title {
+      font-size: 1.8rem;
+    }
+  
+    .AboutToExpire-list th,
+    .AboutToExpire-list td {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .AboutToExpire-back-btn,
+    .AboutToExpire-home-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .AboutToExpire-title {
+      font-size: 1.5rem;
+    }
+  
+    .AboutToExpire-list th,
+    .AboutToExpire-list td {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  
+    .AboutToExpire-back-btn,
+    .AboutToExpire-home-btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }

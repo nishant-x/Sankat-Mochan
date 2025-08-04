@@ -1,0 +1,82 @@
+/* ApplyBed.css */
+.Apply-bed-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Apply-bed-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .Apply-bed-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 5px;
+  }
+  
+  .Apply-bed-input,
+  .Apply-bed-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .Apply-bed-button {
+    background: orange;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+  }
+  
+  .Apply-bed-button:hover {
+    background: #2980b9;
+  }
+  
+  .Apply-bed-button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .Apply-bed-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Apply-bed-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .Apply-bed-title {
+      font-size: 22px;
+    }
+  
+    .Apply-bed-button {
+      font-size: 16px;
+    }
+  }
+  

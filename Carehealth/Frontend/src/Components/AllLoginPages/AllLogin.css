@@ -1,0 +1,120 @@
+/* Full Page Container */
+.all-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfeff; /* Light background */
+  height: 100vh; /* Full screen height */
+}
+
+/* Animation SVG */
+.svf {
+  width: 100px;
+  height: 100px;
+}
+
+/* Title Styling */
+.all-login-container h1 {
+  color: #ffa500; /* Orange text */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Box */
+.all-login-container form {
+  backdrop-filter: blur(8px);
+  background: #f2eeee;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input Groups */
+.all-login-input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.all-login-input-group label {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Input Fields */
+.all-login-input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  color: black;
+  border: 1px solid #ffa500;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Error Message */
+.all-login-error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Button */
+.all-login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.all-login-button:hover {
+  background-color: #cc8400;
+}
+
+/* Register Link */
+.all-login-register-link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.all-login-register-link a {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.all-login-register-link a:hover {
+  text-decoration: underline;
+}
+
+/* .admin-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+} */
+/* .login-svgs{
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+} */

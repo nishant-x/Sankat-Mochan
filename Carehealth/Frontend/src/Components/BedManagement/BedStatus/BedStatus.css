@@ -1,0 +1,166 @@
+/* BedStatus.css */
+
+/* Container for the entire component */
+.Bed-status-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .Bed-status-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Bed Statistics Section */
+  .Bed-status-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Bed-status-subtitle {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .Bed-status-text {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin: 5px 0;
+  }
+  
+  /* Loading State */
+  .Bed-status-loading {
+    font-size: 1.2rem;
+    color: #3498db;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Table Styling */
+  .Bed-status-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Bed-status-table-header {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .Bed-status-th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  
+  .Bed-status-table-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .Bed-status-table-row:hover {
+    background-color: #ecf0f1;
+  }
+  
+  .Bed-status-td {
+    padding: 15px;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  /* Discharge Button */
+  .Bed-status-discharge-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .Bed-status-discharge-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Bed-status-container {
+      padding: 15px;
+    }
+  
+    .Bed-status-title {
+      font-size: 1.8rem;
+    }
+  
+    .Bed-status-subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .Bed-status-text {
+      font-size: 1rem;
+    }
+  
+    .Bed-status-th {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    .Bed-status-td {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .Bed-status-discharge-button {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Bed-status-title {
+      font-size: 1.5rem;
+    }
+  
+    .Bed-status-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .Bed-status-text {
+      font-size: 0.9rem;
+    }
+  
+    .Bed-status-th {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .Bed-status-td {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  
+    .Bed-status-discharge-button {
+      padding: 5px 8px;
+      font-size: 0.8rem;
+    }
+  }

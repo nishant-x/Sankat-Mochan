@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the appointment details */
+.appointment-container {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 20px auto; /* Center the container */
+}
+
+/* Title */
+.appointment-title {
+    color: #1d2228; /* Dark text */
+    font-size: 24px;
+    font-weight: 600; /* Semi-bold for emphasis */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between cells */
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Table Header */
+.appointment-header {
+    background-color: #fb8122; /* Orange accent for headers */
+    color: #ffffff; /* White text */
+    padding: 12px;
+    text-align: center;
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+
+/* Table Cells */
+.appointment-cell {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; /* Light gray border */
+}
+
+/* Alternate Row Background */
+.appointment-row:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Hover Effect for Rows */
+.appointment-row:hover {
+    background-color: #f0f8ff; /* Light blue on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Loading and Error Messages */
+.loading, .error {
+    text-align: center;
+    font-size: 18px;
+    color: #fb8122; /* Orange accent for messages */
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appointment-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .appointment-title {
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+
+    .appointment-table {
+        display: block; /* Convert table to block for responsiveness */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .appointment-header, .appointment-cell {
+        padding: 10px; /* Reduce padding for smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .appointment-container {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .appointment-title {
+        font-size: 18px; /* Smaller font size for very small screens */
+    }
+
+    .appointment-header, .appointment-cell {
+        padding: 8px; /* Further reduce padding for very small screens */
+        font-size: 12px; /* Smaller font size for very small screens */
+    }
+}

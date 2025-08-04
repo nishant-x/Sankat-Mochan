@@ -1,0 +1,18 @@
+# Patient Details:
+Name: shanti dadi
+Age: 99
+Gender: Male
+Contact Number: 7067698821
+Blood Group: B+
+Address: swarg 
+Email: shantidadi@gmail.com
+Login Time: 2025-02-18T07:44:33.204Z
+
+# Patient Prescriptions:
+  No prescriptions found.
+
+# Patient Appointments:
+  No appointments found.
+
+# Patient Report Details:
+  No report details found.

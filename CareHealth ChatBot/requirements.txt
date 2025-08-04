@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-cohere
+streamlit
+fastapi
+langchain-core
+pypdf
+chromadb
+pipreqs
+langserve
+fastapi
+faiss-cpu
+pydantic
+
+# langchain_community.vectorstores

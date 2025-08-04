@@ -1,0 +1,408 @@
+  /* Style for the navigation bar */
+  .patient-dash-container {
+    display: flex;
+    /* flex-direction:column; */
+  }
+
+  :root {
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --hover-color: orange;
+    --border-color: #ddd;
+  }
+
+  .patient-dash-nav {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1rem;
+    gap: 5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .patient-dash-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .patient-dash-link-appointments,
+  .patient-dash-link-prescription,
+  .patient-dash-link-bills,
+  .patient-dash-link-reschedule,
+  .patient-dash-link-medical-report {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    transition: all 0.3s ease;
+    width: 80%;
+    text-align: center;
+  }
+
+  .patient-dash-link-appointments:hover,
+  .patient-dash-link-prescription:hover,
+  .patient-dash-link-bills:hover,
+  .patient-dash-link-reschedule:hover,
+  .patient-dash-link-medical-report:hover {
+    background-color: var(--hover-color);
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    .patient-dash-nav {
+      flex-direction: row;
+      flex-direction: column;
+      /* justify-content: space-evenly; */
+      padding: 1rem 2rem  ;
+    }
+
+    .patient-dash-title {
+      margin-bottom: 0;
+    }
+
+    .patient-dash-link-appointments,
+    .patient-dash-link-prescription,
+    .patient-dash-link-bills,
+    .patient-dash-link-reschedule,
+    .patient-dash-link-medical-report {
+      width: 120%;
+      display: inline-block;
+      margin: 0 0.5rem;
+      margin-left: 4rem;
+      justify-content: center;
+    }
+  }
+
+  /* Style for the user details section */
+  .patient-dash-details {
+    padding: 20px;
+    background-color: #e1e2e2;
+    color: #1d2228;
+    border-radius: 8px;
+  
+  }
+
+  .patient-dash-details-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fb8122;
+  }
+
+  /* Light Theme and Responsive Styles for Patient Dashboard Details */
+  .patient-dash-details-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .profile-widget-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem 0 2rem;
+    object-fit: cover;
+  }
+
+  .profile-info {
+    text-align: left;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  .profile-role,
+  .profile-bio,
+  .profile-gender,
+  .profile-contact,
+  .profile-bloodGroup {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .patient-appointment-total-count,
+  .latest-appointment-container {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+  }
+
+  .patient-appointment-total-count-title,
+  .latest-appointment-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .latest-appointment-card {
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .latest-appointment-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .patient-dash-details-cards {
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+
+  /* Chatbot styling */
+  .patient-dash-chatbot-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .patient-dash-chatbot-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #fb8122;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .patient-dash-chatbot-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: #fb8122;
+  }
+
+  .patient-dash-close-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #1d2228;
+  }
+
+  /* Chatbot Toggle Button */
+  .chatbot_logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+  }
+
+  .chatbot_logo img {
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .chatbot_logo:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Chatbot Popup */
+  .chatbot_popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    border: 1px solid #fb8122;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+  /* Chatbot Header */
+  .chatbot_header {
+    background-color: #fb8122;
+    padding: 8px 18px 12px 6px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Close Button */
+  .close_button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #1d2228;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .close_button:hover {
+    transform: scale(1.2);
+  }
+
+  /* Chatbot Content */
+  .chatbot_popup .chatbot-container {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .chatbot_popup {
+    animation: fadeInUp 0.3s ease-in-out;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chatbot_popup {
+      width: 90%;
+      right: 5%;
+    }
+  }
+
+  .patient-dashboard-cards-appointment,
+  .patient-dashboard-btn {
+    display: flex;
+    flex: 1;
+  }
+
+  .latest-appointment-container {
+    background-color: #ffffff;
+    color: #1d2228;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .latest-appointment-title {
+    color: #1d2228;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .latest-appointment-card {
+    background-color: #f5f5f5;
+    color: #1d2228;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .latest-appointment-card p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .latest-appointment-card strong {
+    color: #fb8122;
+    font-weight: bold;
+  }
+
+  .latest-appointment-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .latest-appointment-container p {
+    color: #1d2228;
+    font-size: 16px;
+  }
+
+  .patient-dashboard-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .patient-appointment-total-count {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .patient-appointment-total-count-title {
+    color: #1d2228;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .medicalreportanalyser {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .patient-dash-link-medical-report {
+    color: #1d2228;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .patient-dash-link-medical-report:hover {
+    color: #fb8122;
+  }
+
+  .patient-dash-details-card-upper {
+    display: flex;
+    gap: 2rem;
+  }

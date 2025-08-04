@@ -1,0 +1,119 @@
+/* Container Styling */
+.AppointmentBookingForm-container {
+    margin: 20px auto;
+    /* background: #1d2228; */
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 12px; background: rgba(112, 87, 87, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Heading */
+  .AppointmentBookingForm-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #e1e2e2;
+    margin-bottom: 25px;
+    font-weight: 600;
+    background-color: #fb8122;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Form Layout */
+  .AppointmentBookingForm-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Field Container */
+  .AppointmentBookingForm-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels */
+  .AppointmentBookingForm-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e1e2e2;
+    margin-bottom: 8px;
+  }
+  
+  /* Input and Select Elements */
+  .AppointmentBookingForm-input{
+    background-color: white;
+    padding: 11px;
+    border-radius:8px ;
+  }
+  .AppointmentBookingForm-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e1e2e2;
+    border-radius: 8px; 
+    font-size: 1rem;
+    color: #000000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+  }
+  
+  .AppointmentBookingForm-input:focus,
+  .AppointmentBookingForm-select:focus {
+    border-color: #fb8122;
+    outline: none;
+    box-shadow: 0 0 8px rgba(251, 129, 34, 0.5);
+  }
+  
+  /* Error Message */
+  .AppointmentBookingForm-error {
+    font-size: 0.9rem;
+    color: #fb8122;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Button Styling */
+  .AppointmentBookingForm-button {
+    background-color: #fb8122;
+    color: #1d2228;
+    font-size: 1.1rem;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .AppointmentBookingForm-button:hover {
+    background-color: #e6731b;
+    transform: translateY(-2px);
+  }
+  
+  .AppointmentBookingForm-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .AppointmentBookingForm-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .AppointmentBookingForm-heading {
+      font-size: 1.8rem;
+    }
+  
+    .AppointmentBookingForm-button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }

@@ -1,0 +1,59 @@
+.AppointmentManagement-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin: 50px auto;
+  }
+  
+  .AppointmentManagement-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    min-height: 60vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
+  .AppointmentManagement-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    cursor: pointer;
+    height: 150px;
+  }
+  
+  .AppointmentManagement-card-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333; /* Dark text color for heading */
+  }
+  
+  .AppointmentManagement-card-description {
+    font-size: 1rem;
+    color: #777; /* Lighter text for description */
+  }
+  
+  .AppointmentManagement-icon {
+    color: #007bff; /* Blue color for icons */
+    font-size: 40px;
+  }
+  
+  .AppointmentManagement-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: #e9ecef; /* Subtle background color change on hover */
+  }
+  
+  .AppointmentManagement-card:active {
+    transform: scale(1); /* Return to original size when clicked */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: #d6d8db; /* Slightly darker background on click */
+  }

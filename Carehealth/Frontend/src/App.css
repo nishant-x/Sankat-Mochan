@@ -1,0 +1,58 @@
+/* Custom Toast Container */
+.Toastify__toast-container {
+  z-index: 9999999 !important; /* Higher z-index to ensure it's always on top */
+  width: 320px; /* Set a fixed width */
+  font-family: Arial, sans-serif; /* Use a consistent font */
+}
+
+/* Custom Toast */
+.Toastify__toast {
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px 20px; /* Padding inside the toast */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  font-size: 14px; /* Font size */
+  color: #fff; /* White text */
+  z-index: 9999999 !important; /* Ensure toast messages stay above everything */
+}
+
+/* Success Toast */
+.Toastify__toast--success {
+  background-color: #28a745; /* Green background */
+}
+
+/* Error Toast */
+.Toastify__toast--error {
+  background-color: #dc3545; /* Red background */
+}
+
+/* Info Toast */
+.Toastify__toast--info {
+  background-color: #17a2b8; /* Blue background */
+}
+
+/* Warning Toast */
+.Toastify__toast--warning {
+  background-color: #ffc107; /* Yellow background */
+  color: #000; /* Black text for better contrast */
+}
+
+/* Close Button */
+.Toastify__close-button {
+  color: #fff; /* White close button */
+  opacity: 0.8; /* Slightly transparent */
+}
+
+.Toastify__close-button:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* Lower z-index for other elements */
+body, 
+header, 
+nav, 
+footer, 
+main, 
+section, 
+div {
+  z-index: 1000 !important; /* Set all other elements to a lower z-index */
+}

@@ -1,0 +1,23 @@
+#Patient Details: 
+Name: Nishant Jhade
+Age: 100
+Gender: Male
+ContactNumber: 8749835720
+Blood Group: B-
+Address: Harshwardhan Nagar Bhopal MP
+Email: jhadenishant@gmail.com
+Login Time: 2025-02-17T19:51:28.979Z
+
+#Patient Prescriptions:
+  1. Prescription Details: dgfdgf (1x/day, 3 units)
+  2. Prescription Details: dgfdgf (1x/day, 1 units)
+  3. Prescription Details: dfsfads (1x/day, 1 units)
+
+#Patient Appointments:
+Appointment 1: Date: 2025-02-15, Time: 09:00 AM, Doctor: Nishant Jhade jhade, Department: Cardiology
+Appointment 2: Date: 2025-02-16, Time: 09:00 AM, Doctor: Nishant Jhade jhade, Department: Cardiology
+Appointment 3: Date: 2025-02-16, Time: 09:30 AM, Doctor: shanti devi, Department: Cardiology
+Appointment 4: Date: 2025-02-17, Time: 10:30 AM, Doctor: Nishant Jhade jhade, Department: Cardiology
+
+#Patient Report Details:
+  No report details found.

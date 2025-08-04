@@ -1,0 +1,97 @@
+/* Medical Report Analyzer - Light Theme & Responsive */
+.medi-analyser-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.medi-analyser {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.medi-analyser-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.medi-analyser-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.medi-analyser-btn{
+    margin-right: 20px;
+}
+.medi-analyser-btn, .medi-analyser-save-btn {
+    width: 40%;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+
+}
+
+.medi-analyser-btn:hover, .medi-analyser-save-btn:hover {
+    background-color: orange;
+}
+
+.medi-analyser-error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.medi-analyser-report {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.medi-analyser-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.medi-analyser-pre {
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .medi-analyser {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .medi-analyser-title {
+        font-size: 20px;
+    }
+}

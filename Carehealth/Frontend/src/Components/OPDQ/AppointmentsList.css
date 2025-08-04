@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.appointments-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Title */
+h2 {
+    color: #1d2228;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* List Styles */
+.appointments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.appointments-list li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.appointments-list li:hover {
+    background-color: #f0f8ff;
+}
+
+/* Buttons */
+.btn-appointment button {
+    padding: 8px 12px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-appointment button:first-child {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.btn-appointment button:first-child:hover {
+    background-color: #e04343;
+}
+
+.btn-appointment button:last-child {
+    background-color: #fb8122;
+    color: white;
+}
+
+.btn-appointment button:last-child:hover {
+    background-color: #e0701e;
+}
+
+/* Reschedule Form */
+.reschedule-container {
+    background-color: #ffffff;
+    padding: 16px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.reschedule-container h3 {
+    color: #1d2228;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.reschedule-container label {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.reschedule-container input,
+.reschedule-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.reschedule-container button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reschedule-container button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.reschedule-container button:first-child:hover {
+    background-color: #218838;
+}
+
+.reschedule-container button:last-child {
+    background-color: #6c757d;
+    color: white;
+}
+
+.reschedule-container button:last-child:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appointments-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn-appointment button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointments-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .btn-appointment button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .reschedule-container input,
+    .reschedule-container select {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+/* Reschedule Form Container */
+.reschedule-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Title */
+.reschedule-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Labels */
+.reschedule-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input and Select Fields */
+.reschedule-input,
+.reschedule-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.reschedule-input:focus,
+.reschedule-select:focus {
+    border-color: #007bff;
+}
+
+/* Buttons */
+.reschedule-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.btn-confirm {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-cancel-reschedule {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .reschedule-container {
+        padding: 10px;
+    }
+    .reschedule-title {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .reschedule-input,
+    .reschedule-select {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

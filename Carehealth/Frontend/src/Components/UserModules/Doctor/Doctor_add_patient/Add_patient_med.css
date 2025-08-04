@@ -1,0 +1,149 @@
+/* Container Styling */
+.component-add-patient-med-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.component-add-patient-med-container h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+/* Patient and Doctor Info */
+.component-add-patient-med-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.component-add-patient-med-info label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.component-add-patient-med-info input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+/* Selected Medicines */
+.component-add-patient-med-selected {
+  margin-bottom: 20px;
+}
+
+.med-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.med-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.med-item label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.med-item select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.med-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.med-item button:hover {
+  background-color: #cc0000;
+}
+
+/* Medicine Search */
+.component-add-patient-med-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.component-add-patient-med-search label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.component-add-patient-med-search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.component-add-patient-med-search ul {
+  list-style: none;
+  padding: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.component-add-patient-med-search ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.component-add-patient-med-search ul li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Submit Button */
+.component-add-patient-med-actions {
+  text-align: center;
+}
+
+.component-add-patient-med-actions button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.component-add-patient-med-actions button:hover {
+  background-color: rgb(126, 93, 31);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .component-add-patient-med-container {
+    padding: 15px;
+  }
+}

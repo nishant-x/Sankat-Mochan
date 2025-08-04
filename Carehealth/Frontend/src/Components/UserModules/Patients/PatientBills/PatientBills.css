@@ -1,0 +1,84 @@
+/* PatientBills.css */
+
+.patient-bill-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-bill-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .patient-bill-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .patient-bill-section {
+    flex: 1 1 45%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-bill-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+  }
+  
+  .patient-bill-card {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .patient-bill-card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #34495e;
+  }
+  
+  .patient-bill-card strong {
+    color: #2c3e50;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .patient-bill-container2 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .patient-bill-section {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .patient-bill-title {
+      font-size: 24px;
+    }
+    .patient-bill-subtitle {
+      font-size: 18px;
+    }
+    .patient-bill-card p {
+      font-size: 14px;
+    }
+  }

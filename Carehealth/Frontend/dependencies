@@ -1,0 +1,4 @@
+npm install @vitejs/plugin-react --save-dev
+npm update caniuse-lite
+npx browserslist@latest --update-db
+npm install react-router-dom

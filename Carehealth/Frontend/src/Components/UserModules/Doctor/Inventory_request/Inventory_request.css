@@ -1,0 +1,201 @@
+/* Inventory_request.css */
+
+/* Container for the entire component */
+.inventory-request-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Doctor Info Section */
+  .inventory-request-doctor-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .inventory-request-doctor-info h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .inventory-request-doctor-info h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+  }
+  
+  /* Medicine Search Section */
+  .inventory-request-medicine-search {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inventory-request-medicine-search label {
+    display: block;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .inventory-request-medicine-search input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .inventory-request-medicine-search ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .inventory-request-medicine-search li {
+    padding: 10px;
+    cursor: pointer;
+    color: #34495e;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .inventory-request-medicine-search li:hover {
+    background-color: #ecf0f1;
+  }
+  
+  /* Selected Medicines Section */
+  .inventory-request-selected-medicines {
+    margin-bottom: 30px;
+  }
+  
+  .inventory-request-selected-medicines h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .inventory-request-medicine-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .inventory-request-medicine-item span {
+    font-size: 1.1rem;
+    color: #34495e;
+  }
+  
+  .inventory-request-medicine-item label {
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .inventory-request-medicine-item input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .inventory-request-medicine-item button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .inventory-request-medicine-item button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Submit Button Section */
+  .inventory-request-form-actions {
+    text-align: center;
+  }
+  
+  .inventory-request-form-actions button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inventory-request-form-actions button:hover {
+    background-color: rgb(143, 105, 35);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .inventory-request-container {
+      padding: 15px;
+    }
+  
+    .inventory-request-doctor-info h2 {
+      font-size: 1.8rem;
+    }
+  
+    .inventory-request-doctor-info h3 {
+      font-size: 1.3rem;
+    }
+  
+    .inventory-request-medicine-search input {
+      font-size: 0.9rem;
+    }
+  
+    .inventory-request-medicine-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .inventory-request-medicine-item label {
+      margin-top: 10px;
+    }
+  
+    .inventory-request-medicine-item button {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .inventory-request-doctor-info h2 {
+      font-size: 1.5rem;
+    }
+  
+    .inventory-request-doctor-info h3 {
+      font-size: 1.1rem;
+    }
+  
+    .inventory-request-medicine-search input {
+      font-size: 0.8rem;
+    }
+  
+    .inventory-request-form-actions button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }

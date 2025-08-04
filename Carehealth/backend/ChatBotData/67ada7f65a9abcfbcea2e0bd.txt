@@ -1,0 +1,18 @@
+#Patient Details: 
+Name:rajkumar lodhi
+ Age:18
+ Gender:Male 
+ ContactNumber:7067698821 
+Blood Group:A+
+ Address:610 quarter 
+Email: raftaarg33@gmail.com
+Login Time: 2025-02-17T10:42:49.717Z
+
+#Patien Prescriptions:
+  1. Prescription Details: paraciitamol (2x/day, 5 units)
+  2. Prescription Details: paraciitamol (2x/day, 5 units)
+  3. Prescription Details: paraciitamol (1x/day, 1 units)
+  4. Prescription Details: 
+
+#Patient Report Details:
+  No report details found.

@@ -1,0 +1,147 @@
+.ExpiredProduct-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ExpiredProduct-heading {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.ExpiredProduct-loading,
+.ExpiredProduct-error-message,
+.ExpiredProduct-no-items {
+    font-size: 18px;
+    color: #dc3545;
+    margin: 10px 0;
+}
+
+.ExpiredProduct-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ExpiredProduct-list th,
+.ExpiredProduct-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.ExpiredProduct-list th {
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+}
+
+.ExpiredProduct-row:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.ExpiredProduct-item-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.ExpiredProduct-expiry-date {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.ExpiredProduct-action-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #fff;
+    background: #28a745;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ExpiredProduct-action-btn:hover {
+    background: #218838;
+}
+
+.ExpiredProduct-button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ExpiredProduct-back-btn,
+.ExpiredProduct-home-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ExpiredProduct-back-btn {
+    background: #ffc107;
+}
+
+.ExpiredProduct-back-btn:hover {
+    background: #e0a800;
+}
+
+.ExpiredProduct-home-btn {
+    background: #17a2b8;
+}
+
+.ExpiredProduct-home-btn:hover {
+    background: #138496;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ExpiredProduct-list th,
+    .ExpiredProduct-list td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .ExpiredProduct-heading {
+        font-size: 24px;
+    }
+
+    .ExpiredProduct-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ExpiredProduct-back-btn,
+    .ExpiredProduct-home-btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ExpiredProduct-container {
+        padding: 15px;
+    }
+    
+    .ExpiredProduct-heading {
+        font-size: 20px;
+    }
+    
+    .ExpiredProduct-list th,
+    .ExpiredProduct-list td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

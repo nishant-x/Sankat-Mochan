@@ -1,0 +1,70 @@
+.add-bed-container {
+    background-color: #1d2228; /* Dark theme */
+    color: #e1e2e2;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .add-bed-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fb8122; /* Orange title */
+    margin-bottom: 15px;
+  }
+  
+  .add-bed-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-bed-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .add-bed-select,
+  .add-bed-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #e1e2e2;
+    border-radius: 5px;
+    background-color: #33383e;
+    color: #e1e2e2;
+    font-size: 16px;
+  }
+  
+  .add-bed-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fb8122; /* Orange button */
+    color: #1d2228;
+    transition:  0.3s ease-in-out;
+  }
+  
+  .add-bed-button:hover {
+    background-color: #e06c13;
+  }
+  
+  .add-bed-message {
+    color: #f3aa60; /* Light orange for messages */
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .add-bed-remove-note {
+    font-size: 14px;
+    color: #cfcfcf;
+    margin-top: 10px;
+  }

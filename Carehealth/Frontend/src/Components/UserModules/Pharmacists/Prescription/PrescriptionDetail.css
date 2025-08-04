@@ -1,0 +1,186 @@
+/* PrescriptionDetail.css */
+
+/* Container for the whole prescription and inventory management page */
+.Prescription-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Prescription-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left section (patient details) */
+.Prescription-left-section {
+    width: 48%;
+    background-color: #e6f7ff; /* Soft blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Prescription-left-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Prescription-prescription-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Prescription-prescription-table th,
+.Prescription-prescription-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.Prescription-prescription-table th {
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+.Prescription-prescription-table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.Prescription-back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Prescription-back-btn:hover {
+    background-color: #f7b700;
+}
+
+/* Right section (inventory management) */
+.Prescription-right-section {
+    width: 48%;
+    background-color: #f0f8ff; /* Lighter blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Prescription-right-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.Prescription-inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.Prescription-inventory-table th,
+.Prescription-inventory-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.Prescription-inventory-table th {
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+.Prescription-inventory-table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.Prescription-inventory-table input {
+    padding: 6px;
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.Prescription-submit-btn {
+    padding: 10px 20px;
+    background-color: #5c9ded;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Prescription-submit-btn:hover {
+    background-color: #4a90d4;
+}
+
+/* Grand total styling */
+.Prescription-right-section h3:last-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Prescription-content {
+        flex-direction: column;
+    }
+
+    .Prescription-left-section,
+    .Prescription-right-section {
+        width: 100%;
+    }
+
+    .Prescription-prescription-table,
+    .Prescription-inventory-table {
+        font-size: 14px;
+    }
+
+    .Prescription-back-btn,
+    .Prescription-submit-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Prescription-left-section h3,
+    .Prescription-right-section h3 {
+        font-size: 20px;
+    }
+
+    .Prescription-prescription-table th,
+    .Prescription-prescription-table td,
+    .Prescription-inventory-table th,
+    .Prescription-inventory-table td {
+        padding: 8px;
+    }
+
+    .Prescription-inventory-table input {
+        padding: 5px;
+        width: 60px;
+    }
+
+    .Prescription-submit-btn,
+    .Prescription-back-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,88 @@
+/* Main Container */
+.patient-prescription-container {
+    background-color: #ffffff; /* Light background */
+    color: #333; /* Dark text */
+    padding: 2rem;
+    border-radius: 10px;
+    min-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.patient-prescription-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff9800; /* Highlighted Orange */
+    margin-bottom: 1.5rem;
+}
+
+/* Prescription Card */
+.patient-prescription-card {
+    background-color: #f9f9f9; /* Light grey shade */
+    color: #333; /* Dark text */
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff9800; /* Orange border for emphasis */
+}
+
+/* Subtitle */
+.patient-prescription-subtitle {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+}
+
+/* Medicine List */
+.patient-prescription-medicine-title {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.patient-prescription-medicine-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.patient-prescription-medicine-item {
+    background: rgba(0, 0, 0, 0.05); /* Light transparent background */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 4px solid #ff9800; /* Orange accent */
+}
+
+/* Messages */
+.patient-prescription-no-medicine,
+.patient-prescription-no-data,
+.patient-prescription-loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff9800;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .patient-prescription-container {
+        padding: 1rem;
+    }
+
+    .patient-prescription-title {
+        font-size: 1.5rem;
+    }
+
+    .patient-prescription-subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .patient-prescription-card {
+        padding: 0.8rem;
+    }
+}

@@ -1,0 +1,112 @@
+/* General container styling */
+.inventorymanagement-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.inventorymanagement-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Button container */
+.inventorymanagement-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.inventorymanagement-add-btn, 
+.inventorymanagement-expired-products-btn, 
+.inventorymanagement-abouttoexpire-btn, 
+.inventorymanagement-home-btn, 
+.inventorymanagement-update-quantity-btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inventorymanagement-add-btn:hover, 
+.inventorymanagement-expired-products-btn:hover, 
+.inventorymanagement-abouttoexpire-btn:hover, 
+.inventorymanagement-home-btn:hover, 
+.inventorymanagement-update-quantity-btn:hover {
+    background: #2980b9;
+}
+
+/* Error message */
+.inventorymanagement-error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Inventory Table */
+.inventorymanagement-item-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.inventorymanagement-item-list th, 
+.inventorymanagement-item-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.inventorymanagement-item-list th {
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.inventorymanagement-item-list tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inventorymanagement-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .inventorymanagement-item-list th, 
+    .inventorymanagement-item-list td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inventorymanagement-container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    .inventorymanagement-button-container a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
