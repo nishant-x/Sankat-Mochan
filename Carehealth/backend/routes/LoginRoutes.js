@@ -9,7 +9,7 @@ const Doctor = require("../Models/DoctorRegistration");
 const Admin = require("../Models/AdminRegistration");
 const Appoinments = require("../Models/AppointmentSchema")
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const Chatbot = require("../Models/Chatbot");
 
