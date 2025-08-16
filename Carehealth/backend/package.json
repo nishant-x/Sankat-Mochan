@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "bcryptjs": "^3.0.2"
-  }
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.1"
+  },
+  "scripts": {
+  "start": "node server.js",
+  "build": "npm install"  
+}
 }
