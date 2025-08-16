@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const Inventory = require('../Models/Inventory');
+const Inventory = require('../Models/inventory');
 const PatientPrescriptions = require('../Models/Patientprescription');
 const InventoryManager = require('../Models/InventoryManagerRegistration');
 
