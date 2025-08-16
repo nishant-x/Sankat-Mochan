@@ -17,7 +17,7 @@ const UpdateQuantity = () => {
     const fetchMedicine = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:5000/inventory/api/inventory/${id}`);
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory/${id}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch medicine');
             }
@@ -39,7 +39,7 @@ const UpdateQuantity = () => {
         }
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:5000/inventory/api/inventory/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory/${id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ quantity: quantity })

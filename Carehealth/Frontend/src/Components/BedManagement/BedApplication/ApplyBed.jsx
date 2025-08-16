@@ -25,7 +25,7 @@ const ApplyBed = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/beds/apply-bed", {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/beds/apply-bed`, {
         ...formData,
         patientId: patient?.id, // Include patient ID if available
         doctorId: doctor?._id, // Include doctor ID if available

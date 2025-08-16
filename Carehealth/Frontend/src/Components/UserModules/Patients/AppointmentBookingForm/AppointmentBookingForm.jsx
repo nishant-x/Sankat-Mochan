@@ -44,7 +44,7 @@ const AppointmentBookingForm = () => {
       setCheckingAvailability(true);
       try {
         const response = await axios.post(
-          "http://localhost:5000/opdRoutes/check-availability",
+          `${import.meta.env.VITE_BACKEND_URL}/opdRoutes/check-availability`,
           { date: formData.date, department: formData.department }
         );
 
@@ -75,10 +75,10 @@ const AppointmentBookingForm = () => {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/opdRoutes/book-appointment", formData);
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/opdRoutes/book-appointment`, formData);
 
       // Send confirmation email
-      await axios.post("http://localhost:5000/opdRoutes/send-appointment-confirmation", {
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/opdRoutes/send-appointment-confirmation`, {
         patientEmail: formData.email,
         patientName: formData.name,
         appointmentDate: formData.date,

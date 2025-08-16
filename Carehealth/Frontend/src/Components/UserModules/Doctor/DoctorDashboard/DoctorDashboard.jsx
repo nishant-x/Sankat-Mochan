@@ -24,7 +24,7 @@ const DoctorDashboard = () => {
       try {
         setUserID(userDetails.doctor._id);
         const response = await axios.get(
-          `http://localhost:5000/doctorRoutes/doctor_patient_list/${userDetails.doctor._id}`
+          `${import.meta.env.VITE_BACKEND_URL}/doctorRoutes/doctor_patient_list/${userDetails.doctor._id}`
         );
         setDoctor(response.data.doctor);
         setPatients(response.data.patients);
@@ -40,7 +40,7 @@ const DoctorDashboard = () => {
 
   const handleSubmit = async (patientId) => {
     try {
-      await axios.put("http://localhost:5000/doctorRoutes/doctor_patient_list", {
+      await axios.put(`${import.meta.env.VITE_BACKEND_URL}/doctorRoutes/doctor_patient_list`, {
         patientId,
         reached: true,
       });

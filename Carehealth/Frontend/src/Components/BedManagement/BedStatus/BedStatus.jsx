@@ -18,7 +18,7 @@ const BedStatus = ({ doctor }) => {
     try {
       console.log("Fetching", doctor._id);
       const appRes = await fetch(
-        `http://localhost:5000/api/beds/bed-status-doctor/${doctor._id}`
+        `${import.meta.env.VITE_BACKEND_URL}/api/beds/bed-status-doctor/${doctor._id}`
       );
       const appData = await appRes.json();
 
@@ -32,7 +32,7 @@ const BedStatus = ({ doctor }) => {
       
       console.log("Applications:", appData);
 
-      const statsRes = await axios.get("http://localhost:5000/api/beds/bed-stats");
+      const statsRes = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/beds/bed-stats`);
       setBedStats(statsRes.data);
       toast.success("Fetched bed statistics successfully!");
       console.log("Bed Stats:", statsRes.data);
@@ -44,7 +44,7 @@ const BedStatus = ({ doctor }) => {
 
   const fetchPrices = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/beds/get-default-prices");
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/beds/get-default-prices`);
       if (res.status === 200 && Array.isArray(res.data)) {
         const priceMap = res.data.reduce((acc, item) => {
           acc[item.bedType] = item.pricePerDay;
@@ -71,13 +71,13 @@ const BedStatus = ({ doctor }) => {
   const handleDischarge = async (id) => {
     try {
       const billResponse = await axios.post(
-        `http://localhost:5000/api/bill/discharge-bill/${id}`
+        `${import.meta.env.VITE_BACKEND_URL}/api/bill/discharge-bill/${id}`
       );
       console.log("Discharge Bill Response:", billResponse.data);
       toast.success("Bill generated successfully!");
 
       const dischargeResponse = await axios.put(
-        `http://localhost:5000/api/bill/discharge/${id}`
+        `${import.meta.env.VITE_BACKEND_URL}/api/bill/discharge/${id}`
       );
       console.log("Discharge Response:", dischargeResponse.data);
       toast.success("Patient discharged successfully!");

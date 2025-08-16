@@ -15,7 +15,7 @@ export default function BedStatusToAdmin() {
   // Fetch applications and bed statistics
   const fetchData = async () => {
     try {
-      const appRes = await fetch(`http://localhost:5000/api/beds/bed-status-admin`);
+      const appRes = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/beds/bed-status-admin`);
       const appData = await appRes.json(); // Parse JSON response
 
       if (appRes.ok) {
@@ -33,7 +33,7 @@ export default function BedStatusToAdmin() {
       }
       console.log("Applications:", appData);
 
-      const statsRes = await axios.get("http://localhost:5000/api/beds/bed-stats");
+      const statsRes = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/beds/bed-stats`);
       setBedStats(statsRes.data);
       console.log("Bed Stats:", statsRes.data);
     } catch (err) {
@@ -52,7 +52,7 @@ export default function BedStatusToAdmin() {
   // Fetch bed prices
   const fetchPrices = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/beds/get-default-prices");
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/beds/get-default-prices`);
       if (res.status === 200 && Array.isArray(res.data)) {
         const priceMap = res.data.reduce((acc, item) => {
           acc[item.bedType] = item.pricePerDay;
@@ -87,11 +87,11 @@ export default function BedStatusToAdmin() {
   //   const handleDischarge = async (id) => {
   //     try {
   //       // Generate the bill first
-  //       const billResponse = await axios.post(`http://localhost:5000/api/bill/discharge-bill/${id}`);
+  //       const billResponse = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/bill/discharge-bill/${id}`);
   //       console.log("Discharge Bill Response:", billResponse.data);
 
   //       // Discharge the patient after the bill is saved
-  //       const dischargeResponse = await axios.put(`http://localhost:5000/api/bill/discharge/${id}`);
+  //       const dischargeResponse = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/api/bill/discharge/${id}`);
   //       console.log("Discharge Response:", dischargeResponse.data);
 
   //       // Refresh data after successful discharge

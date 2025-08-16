@@ -16,7 +16,7 @@ const PatientPrescrption = () => {
         return;
       }
       try {
-        const response = await fetch(`http://localhost:5000/prescriptions/patient/prescription/${ userDetails.patientId || userDetails._id || userDetails}`);
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/prescriptions/patient/prescription/${ userDetails.patientId || userDetails._id || userDetails}`);
         const data = await response.json();
     
         console.log('Full fetched response:', data); // Log the full response

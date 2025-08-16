@@ -11,7 +11,7 @@ const OccupiedBeds = () => {
   // Fetch occupied beds
   const fetchOccupiedBeds = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/beds/occupied-beds");
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/beds/occupied-beds`);
       setOccupiedBeds(res.data);
     } catch (err) {
       toast.error("Error fetching occupied beds");
@@ -31,7 +31,7 @@ const OccupiedBeds = () => {
     }
 
     try {
-      await axios.put("http://localhost:5000/api/beds/update-bed-price", { bedNumber, pricePerDay });
+      await axios.put(`${import.meta.env.VITE_BACKEND_URL}/api/beds/update-bed-price`, { bedNumber, pricePerDay });
       toast.success(`Price for bed ${bedNumber} updated successfully`);
       setPriceUpdates({ ...priceUpdates, [bedNumber]: "" }); // Clear the input field
     } catch (err) {

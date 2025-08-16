@@ -18,7 +18,7 @@ const Inventory_request = () => {
 
   useEffect(() => {
     if (doctor_id) {
-      fetch(`http://localhost:5000/doctorRoutes/doctor/${doctor_id}`)
+      fetch(`${import.meta.env.VITE_BACKEND_URL}/doctorRoutes/doctor/${doctor_id}`)
         .then((res) => res.json())
         .then((data) => {
           if (data.doctor) {
@@ -42,7 +42,7 @@ const Inventory_request = () => {
       return;
     }
 
-    fetch(`http://localhost:5000/inventory/search/inventory?search=${searchTerm}`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/search/inventory?search=${searchTerm}`)
       .then((res) => res.json())
       .then((data) => setSuggestions(data))
       .catch((err) => console.error(err));
@@ -74,7 +74,7 @@ const Inventory_request = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:5000/inventoryRequest/save-inventory-request", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventoryRequest/save-inventory-request`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

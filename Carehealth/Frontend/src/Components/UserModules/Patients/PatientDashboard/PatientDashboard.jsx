@@ -27,7 +27,7 @@ const PatientDashboard = () => {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/login/fetchtxtfile/${userDetails.patient._id}`
+        `${import.meta.env.VITE_BACKEND_URL}/api/login/fetchtxtfile/${userDetails.patient._id}`
       );
 
       if (!response.ok) {
@@ -43,7 +43,7 @@ const PatientDashboard = () => {
 
   const sendTextToBackend = async (textData) => {
     try {
-      const response = await fetch("http://localhost:8080/store-text", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_CHATBOT_URL}/store-text`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const PatientDashboard = () => {
 
       try {
         const response = await fetch(
-          `http://localhost:5000/api/appointments/patient/total_appointment/${userDetails.patient._id}`
+          `${import.meta.env.VITE_BACKEND_URL}/api/appointments/patient/total_appointment/${userDetails.patient._id}`
         );
         const data = await response.json();
 
@@ -101,7 +101,7 @@ const PatientDashboard = () => {
       console.log("from patient dashboard", userDetails.patient._id);
 
       const response = await fetch(
-        `http://localhost:5000/api/appointments/patient/latest_appointment/${userDetails.patient._id}`
+        `${import.meta.env.VITE_BACKEND_URL}/api/appointments/patient/latest_appointment/${userDetails.patient._id}`
       );
       const data = await response.json();
 

@@ -20,7 +20,7 @@ const PatientBills = () => {
       }
 
       try {
-        const response = await fetch(`http://localhost:5000/prescriptions/patient/bill/${userDetails._id}`);
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/prescriptions/patient/bill/${userDetails._id}`);
         const data = await response.json();
 
         console.log('Full fetched response:', data);
@@ -44,7 +44,7 @@ const PatientBills = () => {
   useEffect(() => {
     const fetchBedBills = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/bill/discharge-bill");
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/bill/discharge-bill`);
         const data = await response.json();
 
         if (response.ok) {

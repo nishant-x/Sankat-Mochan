@@ -13,7 +13,7 @@ const HospitalDemand = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/inventory/api/demands")
+      .get(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/demands`)
       .then((response) => {
         setDemands(response.data);
         setLoading(false);

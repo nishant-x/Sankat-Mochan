@@ -33,7 +33,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/login/inventory_manager_login",
+        `${import.meta.env.VITE_BACKEND_URL}/api/login/inventory_manager_login`,
         formData
       );
 

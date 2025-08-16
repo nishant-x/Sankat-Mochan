@@ -7,7 +7,7 @@ function AppointmentsList() {
   const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/appointments")
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/appointments`)
       .then((response) => response.json())
       .then((data) => {
         setAppointments(data);

@@ -20,7 +20,7 @@ const PrescriptionDetails = () => {
     useEffect(() => {
         const fetchPatientDetails = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/inventory/api/patients/${id.trim()}`);
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/patients/${id.trim()}`);
                 if (!response.ok) throw new Error('Failed to fetch patient details.');
                 const data = await response.json();
                 setPatient(data);
@@ -38,7 +38,7 @@ const PrescriptionDetails = () => {
     useEffect(() => {
         const fetchInventory = async () => {
             try {
-                const response = await fetch('http://localhost:5000/inventory/api/inventory');
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory`);
                 if (!response.ok) throw new Error('Failed to fetch inventory.');
                 const data = await response.json();
                 setInventory(data);
@@ -93,7 +93,7 @@ const PrescriptionDetails = () => {
                 const inventoryItem = inventory.find(item => item._id === inventoryId);
                 if (!inventoryItem) return;
                 const newQuantity = Math.max(inventoryItem.quantity - quantityToDeduct, 0);
-                const response = await fetch(`http://localhost:5000/inventory/api/inventory/${inventoryId}`, {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory/${inventoryId}`, {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ quantity: newQuantity }),
@@ -105,7 +105,7 @@ const PrescriptionDetails = () => {
 
             await Promise.all(inventoryUpdatePromises);
 
-            const patientResponse = await fetch(`http://localhost:5000/inventory/api/patients/${id.trim()}`, {
+            const patientResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/patients/${id.trim()}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ handled_by_pharmacist: true, grand_total: grandTotal }),

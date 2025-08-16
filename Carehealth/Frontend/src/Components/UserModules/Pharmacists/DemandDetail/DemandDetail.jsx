@@ -18,7 +18,7 @@ const DemandDetails = () => {
     useEffect(() => {
         const fetchDemandDetails = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/inventory/api/demands/${id}`);
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/demands/${id}`);
                 if (!response.ok) throw new Error('Failed to fetch demand details');
                 const data = await response.json();
                 setDemand(data);
@@ -36,7 +36,7 @@ const DemandDetails = () => {
     useEffect(() => {
         const fetchInventory = async () => {
             try {
-                const response = await fetch('http://localhost:5000/inventory/api/inventory');
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory`);
                 if (!response.ok) throw new Error('Failed to fetch inventory.');
                 const data = await response.json();
                 setInventory(data);
@@ -81,7 +81,7 @@ const DemandDetails = () => {
                 const inventoryItem = inventory.find(item => item._id === inventoryId);
                 if (!inventoryItem) return;
                 const newQuantity = Math.max(inventoryItem.quantity - quantityToDeduct, 0);
-                const response = await fetch(`http://localhost:5000/inventory/api/inventory/${inventoryId}`, {
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory/${inventoryId}`, {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ quantity: newQuantity }),
@@ -94,7 +94,7 @@ const DemandDetails = () => {
 
             await Promise.all(inventoryUpdatePromises);
 
-            const demandResponse = await fetch(`http://localhost:5000/inventory/api/demands/${id.trim()}`, {
+            const demandResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/demands/${id.trim()}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ handled_by_pharmacist: true, grand_total: grandTotal }),

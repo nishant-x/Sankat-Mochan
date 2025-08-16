@@ -59,7 +59,7 @@ function MedicalReportAnalyzer() {
   
     try {
       // Step 2: Send analyzed report details to MongoDB
-      const saveResponse = await axios.post("http://localhost:5000/api/chatbot/save-report", {
+      const saveResponse = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/chatbot/save-report`, {
         patientId: userDetails.patient._id,  // Use correct patient ID
         reportDetails: response,              // Use analyzed report
       });

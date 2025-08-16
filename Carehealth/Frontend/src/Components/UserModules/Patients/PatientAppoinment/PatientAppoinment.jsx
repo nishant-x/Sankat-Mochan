@@ -22,7 +22,7 @@ const AppointmentDetails = () => {
       return;
     }
 
-    fetch(`http://localhost:5000/api/appointments/getAppointments/${userDetails}`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/appointments/getAppointments/${userDetails}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch appointments");

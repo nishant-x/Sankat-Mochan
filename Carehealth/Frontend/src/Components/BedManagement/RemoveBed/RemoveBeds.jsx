@@ -9,7 +9,7 @@ const RemoveBeds = () => {
 
   const fetchFreeBeds = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/beds/free-beds");
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/beds/free-beds`);
       setFreeBeds(res.data);
     } catch (err) {
       toast.error("Error fetching free beds");
@@ -22,7 +22,7 @@ const RemoveBeds = () => {
 
   const handleRemove = async (bedNumber) => {
     try {
-      await axios.delete(`http://localhost:5000/api/beds/remove-bed/${bedNumber}`);
+      await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/api/beds/remove-bed/${bedNumber}`);
       toast.success(`Bed ${bedNumber} removed successfully`);
       fetchFreeBeds(); // Refresh the list after removal
     } catch (err) {

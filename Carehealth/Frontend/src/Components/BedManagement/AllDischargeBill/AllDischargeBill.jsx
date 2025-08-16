@@ -10,7 +10,7 @@ const AllDischargeBill = () => {
   // Fetch all bills
   const fetchBills = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/bill/discharge-bill");
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/bill/discharge-bill`);
       setBills(res.data);
     } catch (err) {
       console.error("Error fetching discharge bills:", err);
@@ -31,7 +31,7 @@ const AllDischargeBill = () => {
 
   const handlePaymentStatus = async (billId) => {
     try {
-      const res = await axios.put(`http://localhost:5000/api/bill/${billId}/payment-status`);
+      const res = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/api/bill/${billId}/payment-status`);
       toast.success("Payment status updated successfully!", {
         position: "top-right",
         autoClose: 3000,

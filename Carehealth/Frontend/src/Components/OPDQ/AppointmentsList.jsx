@@ -17,7 +17,7 @@ const AppointmentsList = () => {
 
     const fetchAppointments = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/opdRoutes/appointments");
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/opdRoutes/appointments`);
             setAppointments(response.data);
         } catch (error) {
             console.error("Error fetching appointments:", error);
@@ -29,7 +29,7 @@ const AppointmentsList = () => {
     const cancelAppointment = async (id) => {
         setLoading(true);
         try {
-            await axios.delete(`http://localhost:5000/opdRoutes/cancel-appointment/${id}`);
+            await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/opdRoutes/cancel-appointment/${id}`);
             toast.success("Appointment cancelled successfully");
             fetchAppointments();
         } catch (error) {
@@ -49,7 +49,7 @@ const AppointmentsList = () => {
 
         try {
             // Check if the slot is available before rescheduling
-            const response = await axios.post("http://localhost:5000/opdRoutes/check-availability", {
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/opdRoutes/check-availability`, {
                 date: rescheduleData.date,
                 time: rescheduleData.time,
             });
@@ -60,7 +60,7 @@ const AppointmentsList = () => {
             }
 
             setLoading(true);
-            await axios.put(`http://localhost:5000/opdRoutes/reschedule-appointment/${rescheduleData.id}`, {
+            await axios.put(`${import.meta.env.VITE_BACKEND_URL}/opdRoutes/reschedule-appointment/${rescheduleData.id}`, {
                 date: rescheduleData.date,
                 time: rescheduleData.time,
             });

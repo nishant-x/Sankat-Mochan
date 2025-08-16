@@ -50,7 +50,7 @@ const PharmacyRegistration = () => {
         years_of_experience: Number(formData.yearsOfExperience), // Match backend naming
       };
 
-      const response = await axios.post("http://localhost:5000/api/register/inventory_register", payload);
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/register/inventory_register`, payload);
       toast.success(response.data.message || "Registration Successful!");
       navigate("/pharmacy-login");
     } catch (error) {

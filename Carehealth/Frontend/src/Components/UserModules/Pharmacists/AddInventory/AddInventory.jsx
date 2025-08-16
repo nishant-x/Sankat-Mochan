@@ -40,7 +40,7 @@ const AddItem = () => {
 
         try {
             // Check if the item already exists
-            const checkResponse = await fetch(`http://localhost:5000/inventory/api/inventory/check?name=${name}`);
+            const checkResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory/check?name=${name}`);
             const checkData = await checkResponse.json();
 
             if (checkResponse.ok && checkData.exists) {
@@ -50,7 +50,7 @@ const AddItem = () => {
             }
 
             // Proceed with adding the item
-            const response = await fetch('http://localhost:5000/inventory/api/inventory', {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

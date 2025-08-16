@@ -33,7 +33,7 @@ const NewAdminRegistration = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/register/admin_register", formData);
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/register/admin_register`, formData);
       console.log("Response received:", response.data);
       toast.success(response.data);
       navigate("/admin-login");

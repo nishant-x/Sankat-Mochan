@@ -13,7 +13,7 @@ const EditBedPrices = () => {
     const fetchPrices = async () => {
       setLoading(true);
       try {
-        const res = await axios.get("http://localhost:5000/api/beds/get-default-prices");
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/beds/get-default-prices`);
         if (res.status === 200 && Array.isArray(res.data)) {
           // Convert array to object { ICU: price, Private: price, General: price }
           const priceMap = res.data.reduce((acc, item) => {
@@ -41,7 +41,7 @@ const EditBedPrices = () => {
   const handleUpdatePrices = async () => {
     setLoading(true);
     try {
-      const res = await axios.put("http://localhost:5000/api/beds/update-default-prices", prices);
+      const res = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/api/beds/update-default-prices`, prices);
       if (res.status === 200) {
         toast.success("Default prices updated successfully.");
       }

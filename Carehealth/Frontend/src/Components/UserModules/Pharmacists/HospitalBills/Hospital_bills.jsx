@@ -13,7 +13,7 @@ const HospitalBills = () => {
 
   const fetchBills = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/inventory/api/hospital-bills');
+      const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/hospital-bills`);
       setBills(response.data);
       toast.success('Hospital bills loaded successfully!');
     } catch (error) {

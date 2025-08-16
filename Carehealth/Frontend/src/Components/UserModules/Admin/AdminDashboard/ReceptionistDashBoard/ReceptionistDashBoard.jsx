@@ -10,7 +10,7 @@ const ReceptionistDashBoard = () => {
   const [totalAppointmentsToday, setTotalAppointmentsToday] = useState(0);
 
   const fetchBedCounts = () => {
-    fetch("http://localhost:5000/api/beds/totalbed")
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/beds/totalbed`)
       .then((response) => response.json())
       .then((data) => setBedCounts(data))
       .catch((error) => {
@@ -20,7 +20,7 @@ const ReceptionistDashBoard = () => {
   };
 
   const fetchTotalAppointmentsToday = () => {
-    fetch("http://localhost:5000/api/appointments/total-appointment-count")
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/appointments/total-appointment-count`)
       .then((response) => response.json())
       .then((data) => {
         if (data.totalAppointments !== undefined) {

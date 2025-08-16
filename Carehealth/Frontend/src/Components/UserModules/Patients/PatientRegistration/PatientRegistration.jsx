@@ -34,7 +34,7 @@ export default function PatientRegister() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/register/patient_register",
+        `${import.meta.env.VITE_BACKEND_URL}/api/register/patient_register`,
         formData
       );
       toast.success("Registration successful! Redirecting to login...");

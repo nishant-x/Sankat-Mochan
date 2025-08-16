@@ -14,7 +14,7 @@ const PatientList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/inventory/api/patients")
+      .get(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/patients`)
       .then((response) => {
         setPatients(response.data); // Update state with fetched patients
         setLoading(false); // Set loading to false after data is fetched

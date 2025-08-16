@@ -11,7 +11,7 @@ const BedManagement = () => {
 
   const handleAddBeds = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/beds/add-beds", { type, count });
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/beds/add-beds`, { type, count });
       toast.success(res.data.message, {
         position: "top-right",
         autoClose: 3000,

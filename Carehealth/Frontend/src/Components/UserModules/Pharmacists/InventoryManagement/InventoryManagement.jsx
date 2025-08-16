@@ -16,7 +16,7 @@ const InventoryManagement = () => {
     const fetchItems = async () => {
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:5000/inventory/api/inventory');
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/inventory/api/inventory`);
             if (!response.ok) {
                 const message = await response.json();
                 throw new Error(`Failed to fetch items: ${message.error}`);
@@ -46,7 +46,7 @@ const InventoryManagement = () => {
 
     const sendMedicineShortageEmail = async (pharmacistEmail, medicineName, currentStock) => {
         try {
-            const response = await fetch("http://localhost:5000/send-email", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/send-email`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

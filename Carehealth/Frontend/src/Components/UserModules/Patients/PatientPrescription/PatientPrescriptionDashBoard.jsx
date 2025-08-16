@@ -18,7 +18,7 @@ const PatientPrescrptionDashBoard = () => {
       }
   
       try {
-        const response = await fetch(`http://localhost:5000/prescriptions/patient/latest-prescription/${userDetails.patient._id}`);
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/prescriptions/patient/latest-prescription/${userDetails.patient._id}`);
         const data = await response.json();
   
         if (response.ok) {

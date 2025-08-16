@@ -9,7 +9,7 @@ const TodayAppointments = () => {
     useEffect(() => {
         const fetchAppointments = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/appointments/today");
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/appointments/today`);
                 const data = await response.json();
                 setAppointments(data);
             } catch (error) {

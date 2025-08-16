@@ -8,7 +8,7 @@ const TotalPatient = () => {
     const [loading, setLoading] = useState(true); // Added loading state
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/patients/totalpatients")
+        fetch(`${import.meta.env.VITE_BACKEND_URL}/api/patients/totalpatients`)
             .then((response) => response.json())
             .then((data) => {
                 setPatients(data);
