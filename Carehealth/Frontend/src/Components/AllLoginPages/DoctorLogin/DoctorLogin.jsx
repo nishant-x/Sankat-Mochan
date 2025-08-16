@@ -111,9 +111,9 @@ const Login = () => {
         <button type="submit" className="all-login-button">
           Login
         </button>
-        <p className="all-login-register-link">
+        {/* <p className="all-login-register-link">
           Don't have an account? <Link to="/doctor-registration">Register Now</Link>
-        </p>
+        </p> */}
       </form>
     </div>
   );
